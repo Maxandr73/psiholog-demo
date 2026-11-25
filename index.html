@@ -1,0 +1,446 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow" data-publish>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>{{имя}} · психолог в {{город}}</title>
+<meta name="description" content="Персональный сайт психолога {{имя}} в {{город}}: обо мне, подход, как проходит первая встреча, услуги и стоимость консультаций.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ru_RU">
+<meta property="og:site_name" content="{{имя}} · психолог">
+<meta property="og:title" content="{{имя}} · психолог в {{город}}">
+<meta property="og:description" content="Спокойный разговор с психологом: понятно, как проходит первая встреча, что будет между встречами и сколько это стоит.">
+<meta property="og:url" content="{{ссылка-сайта}}">
+<meta property="og:image" content="{{ссылка-сайта}}/assets/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preload" as="image" href="assets/hero-m.webp" media="(max-width: 860px)" fetchpriority="high">
+<link rel="preload" as="image" href="assets/hero.webp" media="(min-width: 861px)" fetchpriority="high">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,500;0,600;1,400&family=Golos+Text:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 32 32%27%3E%3Crect width=%2732%27 height=%2732%27 rx=%277%27 fill=%27%2356634d%27/%3E%3Ccircle cx=%2716%27 cy=%2716%27 r=%276%27 fill=%27%23f7f3ee%27/%3E%3C/svg%3E">
+<link rel="stylesheet" href="vibe.css">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"ProfessionalService","name":"{{имя}} · психолог","description":"Персональная практика психолога: индивидуальные консультации очно и онлайн.","url":"{{ссылка-сайта}}","image":"{{ссылка-сайта}}/assets/og.jpg","telephone":"{{телефон}}","openingHours":"{{часы}}","address":{"@type":"PostalAddress","streetAddress":"{{адрес}}","addressLocality":"{{город}}","addressCountry":"RU"},"priceRange":"уточнить"}
+</script>
+<style>
+  /* ---- тема: тёплая бумага + хвоя, два шрифта ----------------------------- */
+  .v-page {
+    --v-canvas: #f7f3ee; --v-surface: #fffdf9;
+    --v-ink: #2e2a26; --v-ink-soft: #71695f;
+    --v-accent: #56634d; --v-accent-ink: #f6f7f2; --v-accent-deep: #45523f;
+    --v-font-display: "Spectral", Georgia, serif;
+    --v-font-text: "Golos Text", "Segoe UI", system-ui, sans-serif;
+    --v-shadow-color: 62 52 40;
+    --v-e1: 0 1px 2px rgb(var(--v-shadow-color) / .08), 0 8px 22px rgb(var(--v-shadow-color) / .10);
+    --v-e2: 0 2px 6px rgb(var(--v-shadow-color) / .10), 0 22px 54px rgb(var(--v-shadow-color) / .16);
+    --v-edge: inset 0 1px 0 rgb(255 255 255 / .7);
+    --v-radius: 12px;
+    --v-section: clamp(3.5rem, 8vw, 7rem);
+    --v-display-weight: 500;
+    --v-track-tight: -0.01em;
+    --v-track-normal: 0;
+  }
+  html, body { background: #f7f3ee; }
+  .v-page .v-display { font-weight: 500; }
+  .v-page .v-display--xl { line-height: 1.06; }
+  .v-page .v-lede { font-weight: 400; line-height: 1.5; }
+  .v-page .v-label { font-weight: 600; }
+  .v-page .v-btn { font-size: var(--v-t-base); font-weight: 600; }
+  .v-page [id] { scroll-margin-top: 5rem; }
+  .v-page a { text-underline-offset: .18em; }
+
+  /* ---- шапка ---------------------------------------------------------------- */
+  .bar { position: fixed; inset: 0 0 auto 0; z-index: 40; display: flex; align-items: center; justify-content: space-between;
+    padding: var(--v-3) var(--v-gutter); gap: var(--v-4);
+    background: linear-gradient(to bottom, rgb(247 243 238 / .9), rgb(247 243 238 / 0));
+    transition: background-color .3s var(--v-ease-out), box-shadow .3s var(--v-ease-out); }
+  .bar.is-scrolled { background: rgb(247 243 238 / .9); -webkit-backdrop-filter: blur(12px); backdrop-filter: blur(12px); box-shadow: 0 1px 0 var(--v-hair); }
+  .bar__mark { font-family: var(--v-font-display); font-weight: 600; font-size: var(--v-t-lg); letter-spacing: .01em; text-decoration: none; color: var(--v-ink);
+    display: inline-flex; align-items: center; gap: .45em; min-height: 44px; white-space: nowrap; }
+  .bar__mark i { width: .62em; height: .62em; border-radius: 50%; background: var(--v-accent); display: inline-block; }
+  .bar__nav { display: flex; align-items: center; gap: var(--v-2); }
+  .bar__nav a { text-decoration: none; color: var(--v-ink-soft); font-size: var(--v-t-sm); font-weight: 500; padding: 0 var(--v-2); min-height: 44px; display: inline-flex; align-items: center; border-radius: 999px;
+    transition: color .16s var(--v-ease-out), background-color .16s var(--v-ease-out); }
+  .bar__nav a:hover { color: var(--v-ink); background: rgb(86 99 77 / .09); }
+  .bar__right { display: flex; align-items: center; gap: var(--v-4); }
+  .bar__tel { text-decoration: none; font-weight: 500; font-size: var(--v-t-sm); color: var(--v-ink); display: inline-flex; align-items: center; min-height: 44px; padding: 0 var(--v-2); }
+  @media (max-width: 1080px) { .bar__nav { display: none; } }
+  @media (max-width: 700px) {
+    .bar__tel { display: none; }
+    .bar .v-btn { padding: 0 1em; min-height: 44px; font-size: .9rem; }
+    .bar__right { gap: var(--v-2); }
+    .bar__mark { font-size: 1.15rem; }
+  }
+
+  /* ---- hero: кабинет, два плана --------------------------------------------- */
+  .hero__back img { position: absolute; max-width: none; width: 112%; height: 112%; left: -6%; top: -6%; object-fit: cover; object-position: 0% 50%; }
+  .hero__card { --w: clamp(180px, 15vw, 250px); --r: clamp(1.5rem, 4vw, 5rem); --b: clamp(6rem, 16vh, 10rem); }
+  .hero__card figure { position: absolute; right: var(--r); bottom: var(--b); width: var(--w); padding: .5rem .5rem .65rem; border-radius: calc(var(--v-radius) - 4px);
+    background: var(--v-surface); box-shadow: 0 30px 60px rgb(62 52 40 / .2), var(--v-edge); transform: rotate(-3deg); }
+  .hero__card img { width: 100%; height: auto; aspect-ratio: 3 / 4; object-fit: cover; border-radius: calc(var(--v-radius) - 7px); display: block; }
+  .hero__card figcaption { margin-top: .55rem; font-size: var(--v-t-xs); line-height: 1.35; color: var(--v-ink-soft); }
+  .hero__card figcaption b { display: block; color: var(--v-ink); font-weight: 500; }
+  .hero__scrim { position: absolute; inset: 0; z-index: 2; pointer-events: none;
+    background: radial-gradient(120% 95% at 0% 100%, rgb(247 243 238 / .95) 0%, rgb(247 243 238 / .62) 38%, transparent 70%); }
+  .hero__floor { position: absolute; inset: auto 0 0 0; height: 26%; z-index: 2; pointer-events: none;
+    background: linear-gradient(to top, var(--v-canvas) 0%, rgb(247 243 238 / .5) 45%, transparent 100%); }
+  .hero__copy { bottom: clamp(5rem, 14vh, 9rem); max-width: min(46rem, 86vw); }
+  .hero__label { display: block; margin-bottom: var(--v-4); color: var(--v-accent-deep); }
+  .hero__copy .v-display { font-size: clamp(2rem, .8rem + 2.6vw, 3.2rem); max-width: 24ch; }
+  .hero__copy .v-lede { margin-top: var(--v-5); color: var(--v-ink); max-width: 40ch; }
+  .hero__cta { display: flex; flex-wrap: wrap; align-items: center; gap: var(--v-4) var(--v-6); margin-top: var(--v-6); }
+  .hero__tel { text-decoration: none; color: var(--v-ink); font-size: var(--v-t-sm); display: inline-flex; align-items: center; min-height: 44px; gap: .35em; }
+  .hero__tel b { font-weight: 500; text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: .18em; }
+  /* плашка «демо для заказчицы» */
+  .demo-for { position: absolute; left: var(--v-gutter); top: clamp(4.6rem, 10vh, 6.5rem); z-index: 6;
+    display: inline-flex; align-items: center; gap: .55rem; max-width: min(92vw, 30rem);
+    padding: .45rem .95rem; border-radius: 999px; background: var(--v-surface);
+    box-shadow: var(--v-e1), var(--v-edge); font-size: var(--v-t-sm); color: var(--v-ink); }
+  .demo-for span { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  @media (max-height: 760px) and (min-width: 861px) { .hero__copy .v-display { font-size: var(--v-t-2xl); } .hero__copy { bottom: clamp(3.5rem, 10vh, 6rem); } }
+  @media (max-width: 860px) {
+    .hero__back img { object-position: 50% 62%; }
+    .hero__scrim { background: linear-gradient(to bottom, rgb(247 243 238 / .95) 0%, rgb(247 243 238 / .82) 44%, transparent 66%); }
+    .hero__floor { height: 14%; }
+    .hero__card { display: none; }
+    .demo-for { top: clamp(4.2rem, 9vh, 5.5rem); }
+    .hero__copy { top: clamp(7.5rem, 14vh, 9rem); bottom: auto; max-width: none; }
+    .hero__copy .v-display { font-size: var(--v-t-2xl); max-width: none; }
+    .hero__copy .v-lede { font-size: var(--v-t-base); margin-top: var(--v-4); }
+    .hero__label { margin-bottom: var(--v-3); }
+    .hero__cta { margin-top: var(--v-5); gap: var(--v-2) var(--v-5); }
+  }
+
+  /* ---- обо мне ---------------------------------------------------------------- */
+  .about { display: grid; grid-template-columns: .85fr 1.15fr; gap: var(--v-9); align-items: start; }
+  .about__fig { position: relative; border-radius: var(--v-radius); overflow: hidden; aspect-ratio: 3 / 4; box-shadow: var(--v-e2), var(--v-edge); }
+  .about__fig img { width: 100%; height: 100%; object-fit: cover; }
+  .about__fig figcaption { position: absolute; left: var(--v-5); right: var(--v-5); bottom: var(--v-5); z-index: 1; font-size: var(--v-t-sm); color: var(--v-ink); max-width: 32ch; }
+  .about__fig::after { content: ""; position: absolute; inset: auto 0 0 0; height: 45%; background: linear-gradient(to top, rgb(247 243 238 / .9), rgb(247 243 238 / .3) 55%, transparent); pointer-events: none; }
+  .about__body { display: grid; gap: var(--v-5); }
+  .about__body .v-display { margin-bottom: var(--v-2); }
+  .about__text { color: var(--v-ink); max-width: 58ch; text-wrap: pretty; }
+  .about__text + .about__text { color: var(--v-ink-soft); }
+  .about__edu { margin-top: var(--v-3); display: grid; gap: 0; }
+  .about__edu li { padding: var(--v-4) 0; border-top: 1px solid var(--v-hair); display: grid; gap: var(--v-1); font-size: var(--v-t-sm); color: var(--v-ink-soft); }
+  .about__edu li:last-child { border-bottom: 1px solid var(--v-hair); }
+  .about__edu b { color: var(--v-ink); font-weight: 500; font-size: var(--v-t-base); }
+  @media (max-width: 860px) { .about { grid-template-columns: 1fr; gap: var(--v-6); } .about__fig { aspect-ratio: 4 / 3; } .about__fig img { object-position: 50% 38%; } }
+
+  /* ---- подход: строки ---------------------------------------------------------- */
+  .how__head { max-width: 58rem; margin-bottom: var(--v-7); }
+  .how__head .v-body { margin-top: var(--v-4); }
+  .how__rows li { display: grid; grid-template-columns: minmax(14rem, .8fr) 1.6fr; gap: var(--v-2) var(--v-8); padding: var(--v-5) 0; border-top: 1px solid var(--v-hair); align-items: start; }
+  .how__rows li:last-child { border-bottom: 1px solid var(--v-hair); }
+  .how__rows h3 { font-family: var(--v-font-display); font-weight: 500; font-size: var(--v-t-xl); line-height: 1.15; letter-spacing: 0; text-wrap: balance; }
+  .how__rows p { color: var(--v-ink-soft); max-width: 58ch; text-wrap: pretty; }
+  @media (max-width: 860px) {
+    .how__rows li { grid-template-columns: 1fr; gap: var(--v-2); }
+    .how__rows h3 { font-size: var(--v-t-lg); }
+  }
+
+  /* ---- как проходит встреча: pin + линия 50 минут (фирменный ход) ---------------- */
+  .meet__img img { width: 112%; height: 112%; left: -6%; top: -6%; object-fit: cover; object-position: 60% 50%; }
+  .meet__scrim { position: absolute; inset: 0; z-index: 2; pointer-events: none;
+    background: radial-gradient(115% 90% at 0% 0%, rgb(247 243 238 / .95) 0%, rgb(247 243 238 / .66) 40%, transparent 72%); }
+  .meet { position: absolute; inset: 0; z-index: 3; display: grid; align-content: center; gap: var(--v-6);
+    padding: clamp(4rem, 10vh, 6rem) var(--v-gutter) clamp(2rem, 6vh, 4rem); }
+  .meet__head { max-width: 44rem; }
+  .meet__head .v-label { display: block; margin-bottom: var(--v-3); color: var(--v-accent-deep); }
+  .meet__head .v-display--lg { font-size: clamp(1.9rem, 1.2rem + 2.2vw, 3rem); }
+  .meet__rep { position: relative; min-height: 11rem; max-width: 40rem; }
+  .meet__rep > div { position: absolute; left: 0; top: 0; max-width: 36rem; }
+  .meet__rep h3 { font-family: var(--v-font-display); font-weight: 500; font-size: var(--v-t-xl); line-height: 1.15; letter-spacing: 0; margin-bottom: var(--v-3); text-wrap: balance; }
+  .meet__rep p { color: var(--v-ink); opacity: .92; max-width: 46ch; text-wrap: pretty; }
+  /* линия сессии: маркер едет от --v-p, отметки загораются по своим порогам */
+  .tl { position: relative; max-width: 40rem; padding-top: 1.9rem; }
+  .tl__cap { position: absolute; left: 0; top: 0; font-size: var(--v-t-xs); letter-spacing: var(--v-track-wide); text-transform: uppercase; color: var(--v-ink-soft); }
+  .tl__cap b { color: var(--v-accent-deep); font-weight: 600; }
+  .tl__track { position: relative; height: 4px; border-radius: 999px; background: var(--v-hair-strong); }
+  .tl__fill { position: absolute; inset: 0 auto 0 0; width: calc(var(--v-p, 0) * 100%); border-radius: inherit; background: var(--v-accent); }
+  .tl__mark { --on: clamp(0, calc((var(--v-p, 0) - var(--from)) * 8), 1); position: absolute; top: 50%; left: calc(var(--at) * 100%); transform: translate(-50%, -50%); display: grid; justify-items: center; }
+  .tl__mark i { width: 1rem; height: 1rem; border-radius: 50%; background: var(--v-surface); border: 2px solid var(--v-hair-strong);
+    transform: scale(calc(.7 + .3 * var(--on))); transition: none; }
+  .tl__mark b { position: absolute; top: 1.15rem; left: 50%; transform: translateX(-50%); width: max-content; max-width: 46vw; white-space: normal; text-align: center; text-wrap: balance;
+    font-family: var(--v-font-text); font-weight: 500; font-size: var(--v-t-xs); line-height: 1.35; color: var(--v-ink-soft);
+    opacity: calc(.35 + .65 * var(--on)); }
+  .tl__mark b small { display: block; font-size: .95em; color: var(--v-ink); opacity: calc(.3 + .7 * var(--on)); }
+  .tl__mark--0 { --at: 0; --from: .02; }
+  .tl__mark--0 b { left: 0; transform: none; text-align: left; }
+  .tl__mark--1 { --at: .2; --from: .3; }
+  .tl__mark--2 { --at: 1; --from: .8; }
+  .tl__mark--2 b { left: auto; right: 0; transform: none; text-align: right; }
+  @media (max-width: 860px) {
+    .meet__scrim { background: linear-gradient(to bottom, rgb(247 243 238 / .96) 0%, rgb(247 243 238 / .88) 46%, rgb(247 243 238 / .3) 78%, transparent 100%); }
+    .meet { align-content: start; gap: var(--v-5); padding: clamp(4.5rem, 11vh, 6rem) var(--v-gutter) clamp(1.5rem, 5vh, 3rem); }
+    .meet__head .v-label { display: none; }
+    .meet__head .v-display--lg { font-size: var(--v-t-xl); }
+    .meet__rep { min-height: 10rem; }
+    .meet__rep h3 { font-size: var(--v-t-lg); margin-bottom: var(--v-2); }
+    .meet__rep p { font-size: var(--v-t-sm); }
+    .tl { max-width: none; }
+    .tl__mark b { max-width: 38vw; }
+  }
+  @media (max-width: 600px) and (max-height: 700px) { .meet__rep { min-height: 8.5rem; } }
+
+  /* ---- услуги и стоимость ------------------------------------------------------- */
+  .svc { display: grid; grid-template-columns: .8fr 1.4fr; gap: var(--v-9); align-items: start; }
+  .svc__head .v-body { color: var(--v-ink-soft); margin-top: var(--v-4); }
+  .svc__rows li { display: grid; grid-template-columns: 1fr auto; gap: var(--v-2) var(--v-6); padding: var(--v-5) 0; border-top: 1px solid var(--v-hair); align-items: start; }
+  .svc__rows li:last-child { border-bottom: 1px solid var(--v-hair); }
+  .svc__rows h3 { font-family: var(--v-font-display); font-weight: 500; font-size: var(--v-t-xl); line-height: 1.15; letter-spacing: 0; }
+  .svc__rows p { color: var(--v-ink-soft); font-size: var(--v-t-sm); max-width: 46ch; }
+  .svc__rows .sum { grid-column: 2; grid-row: 1 / span 2; font-family: var(--v-font-display); font-weight: 500; font-size: var(--v-t-xl); line-height: 1.1; color: var(--v-accent-deep); text-align: right; white-space: nowrap; }
+  .svc__rows .sum small { display: block; font-family: var(--v-font-text); font-weight: 500; font-size: var(--v-t-xs); letter-spacing: var(--v-track-wide); text-transform: uppercase; color: var(--v-ink-soft); margin-top: .35em; }
+  .svc__terms { margin-top: var(--v-6); display: grid; gap: var(--v-3); }
+  .svc__terms li { display: grid; grid-template-columns: 11rem 1fr; gap: var(--v-4); font-size: var(--v-t-sm); color: var(--v-ink-soft); }
+  .svc__terms b { color: var(--v-ink); font-weight: 500; }
+  @media (max-width: 1000px) {
+    .svc { grid-template-columns: 1fr; gap: var(--v-6); }
+    .svc__rows li { grid-template-columns: 1fr; }
+    .svc__rows .sum { grid-column: 1; grid-row: auto; text-align: left; white-space: normal; margin-top: var(--v-2); }
+    .svc__terms li { grid-template-columns: 1fr; gap: var(--v-1); }
+  }
+
+  /* ---- контакты ------------------------------------------------------------------- */
+  .close { min-height: 86svh; display: grid; grid-template-rows: 1fr auto; padding: clamp(6rem, 14vh, 9rem) var(--v-gutter) 2.5rem;
+    background: radial-gradient(60rem 40rem at calc(var(--v-mx, .5) * 100%) calc(var(--v-my, .5) * 100%), rgb(86 99 77 / .12), transparent 60%); }
+  .close__inner { align-self: center; display: grid; grid-template-columns: 1.25fr .75fr; gap: var(--v-9); align-items: start; padding-bottom: var(--v-9); }
+  .close__inner .v-display { margin-bottom: var(--v-5); }
+  .close__inner .v-lede { max-width: 42ch; }
+  .close__cta { display: flex; flex-wrap: wrap; align-items: center; gap: var(--v-4) var(--v-6); margin-top: var(--v-6); }
+  .close__tel { font-family: var(--v-font-display); font-weight: 500; font-size: var(--v-t-xl); text-decoration: none; display: inline-flex; align-items: center; min-height: 44px; color: var(--v-ink); letter-spacing: .01em; }
+  .close__hint { margin-top: var(--v-4); font-size: var(--v-t-sm); color: var(--v-ink-soft); max-width: 46ch; }
+  .close__meta { display: grid; gap: var(--v-3); color: var(--v-ink-soft); padding-top: var(--v-2); }
+  .close__meta b { color: var(--v-ink); font-weight: 500; display: block; font-size: var(--v-t-xs); letter-spacing: var(--v-track-wide); text-transform: uppercase; margin-bottom: .2em; }
+  .foot { display: flex; justify-content: space-between; gap: var(--v-4); padding: var(--v-6) 0 0; border-top: 1px solid var(--v-hair); font-size: var(--v-t-xs); color: var(--v-ink-soft); flex-wrap: wrap; }
+  @media (max-width: 860px) {
+    .close { min-height: 0; padding: clamp(5rem, 12vh, 7rem) var(--v-gutter) calc(2.5rem + env(safe-area-inset-bottom)); }
+    .close__inner { grid-template-columns: 1fr; gap: var(--v-7); padding-bottom: var(--v-8); }
+    .close__tel { font-size: var(--v-t-lg); }
+    .foot__more { display: none; }
+  }
+
+  /* телефон: текст не мельче 15 px */
+  @media (max-width: 860px) {
+    .hero__tel, .about__text, .about__edu li, .how__rows p, .meet__rep p, .svc__rows p, .svc__terms li, .close__hint, .close__meta, .foot { font-size: .95rem; }
+    .bar .v-btn { font-size: .95rem; }
+    .v-label, .close__meta b, .svc__rows .sum small, .tl__cap { font-size: .95rem; }
+  }
+</style>
+</head>
+<body>
+<div class="v-page">
+  <span data-v-progress></span>
+  <div class="v-grain" aria-hidden="true"></div>
+
+  <header class="bar">
+    <a class="bar__mark" href="#top"><i aria-hidden="true"></i>{{имя}}</a>
+    <nav class="bar__nav" aria-label="Разделы сайта">
+      <a href="#top">Главная</a>
+      <a href="#about">Обо мне</a>
+      <a href="#podhod">Подход</a>
+      <a href="#kak">Как проходит встреча</a>
+      <a href="#uslugi">Услуги и стоимость</a>
+      <a href="#kontakty">Контакты</a>
+    </nav>
+    <div class="bar__right">
+      <a class="bar__tel" href="tel:{{телефон}}">{{телефон}}</a>
+      <a class="v-btn" href="{{ссылка-записи}}" rel="noopener">Записаться</a>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- 1 · ГЛАВНАЯ: кабинет, два плана -->
+    <section id="top" data-v-act="pin" data-v-span="2" data-v-drift="#f7f3ee" aria-label="Главная">
+      <div data-v-stage>
+        <p class="demo-for"><span>Демо для ivamarinaniko · по заказу «Красивый персональный сайт психолога на Tilda»</span></p>
+        <div class="v-layer hero__back" data-v-parallax="-0.45">
+          <picture>
+            <source media="(max-width: 860px)" srcset="assets/hero-m.webp">
+            <img src="assets/hero.webp" alt="" width="1920" height="1080" fetchpriority="high">
+          </picture>
+        </div>
+        <div class="hero__scrim" aria-hidden="true"></div>
+        <div class="v-layer hero__card" data-v-parallax="-0.85">
+          <figure>
+            <img src="assets/portrait.webp" alt="" width="1200" height="1600" decoding="async">
+            <figcaption><b>{{имя}}</b>психолог · {{город}}</figcaption>
+          </figure>
+        </div>
+        <div class="hero__floor" aria-hidden="true"></div>
+
+        <div class="v-copy v-copy--lead hero__copy" data-v-cue="0 0.9 0 0.1">
+          <span class="v-label hero__label">Психолог · {{город}} · очно и онлайн</span>
+          <h1 class="v-display v-display--xl" data-v-kinetic="lines">Психолог в {{город}} для тех, кто устал справляться в одиночку</h1>
+          <p class="v-lede">Первая встреча – знакомство: расскажете, что привело, я – как работаю. Решать, продолжать ли, будете после неё, а не до.</p>
+          <div class="hero__cta">
+            <a class="v-btn" href="{{ссылка-записи}}" rel="noopener">Записаться</a>
+            <a class="hero__tel" href="tel:{{телефон}}">или позвоните <b>{{телефон}}</b></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2 · ОБО МНЕ -->
+    <section class="v-section v-section--tight" data-v-act="flow" data-v-drift="#f1ece4" id="about" aria-label="Обо мне">
+      <div class="v-wrap about">
+        <figure class="about__fig" data-v-reveal="up" data-v-reveal-at="0.12 0.46" data-v-tilt="4">
+          <img src="assets/portrait.webp" alt="{{имя}} сидит в кресле в светлом кабинете и спокойно смотрит в камеру" width="1200" height="1600" loading="lazy" decoding="async">
+          <figcaption>{{имя}} · приём ведёт очно в {{город}} и онлайн</figcaption>
+        </figure>
+        <div class="about__body" data-v-in data-v-stagger="70">
+          <h2 class="v-display v-display--md">Обо мне</h2>
+          <p class="about__text">{{текст-обо-мне 1}}</p>
+          <p class="about__text">{{текст-обо-мне 2}}</p>
+          <ul class="about__edu">
+            <li><b>{{образование 1}}</b>{{год-образование 1}}</li>
+            <li><b>{{образование 2}}</b>{{год-образование 2}}</li>
+            <li><b>Опыт частной практики</b>{{опыт}}</li>
+          </ul>
+          <p class="about__text">{{текст-опыт}}</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3 · ПОДХОД -->
+    <section class="v-section" data-v-act="flow" data-v-drift="#f7f3ee" id="podhod" aria-label="Подход">
+      <div class="v-wrap">
+        <div class="how__head" data-v-in data-v-stagger="70">
+          <h2 class="v-display v-display--lg">С чем приходят и как я работаю</h2>
+          <p class="v-body v-soft">{{текст-подход}}</p>
+        </div>
+        <ul class="how__rows" data-v-in data-v-stagger="90">
+          <li><h3>Тревога и тревожные мысли</h3><p>Когда голова крутит сценарии, тело на взводе, а уснуть или сосредоточиться получается с трудом. Разбираем, что за этим стоит, в вашем темпе.</p></li>
+          <li><h3>Отношения</h3><p>Пара, семья, коллеги, близость: когда один и тот же сценарий повторяется снова и непонятно, что можно изменить со своей стороны.</p></li>
+          <li><h3>Выгорание и усталость</h3><p>Когда «нормально» уже давно никак, отдых не отдыхает, и вопрос «зачем всё это» звучит всё чаще.</p></li>
+          <li><h3>Потери и перемены</h3><p>Развод, переезд, утрата, новый этап жизни – то, с чем нельзя просто «взять себя в руки», и не нужно.</p></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 4 · КАК ПРОХОДИТ ВСТРЕЧА: pin + линия 50 минут -->
+    <section data-v-act="pin" data-v-span="2.2" data-v-drift="#f1ece4" id="kak" aria-label="Как проходит встреча">
+      <div data-v-stage>
+        <div class="v-layer meet__img" data-v-parallax="-0.3">
+          <img src="assets/cabinet.webp" alt="" width="1920" height="1080" loading="lazy" decoding="async">
+        </div>
+        <div class="meet__scrim" aria-hidden="true"></div>
+        <div class="meet">
+          <div class="meet__head" data-v-cue="0 1 0 0" data-v-rise="0">
+            <span class="v-label">Как проходит встреча</span>
+            <h2 class="v-display v-display--lg">Пятьдесят минут, о которых вы знаете заранее</h2>
+          </div>
+          <div class="meet__rep">
+            <div data-v-cue="0 0.34 0 0.06">
+              <h3>Начало: знакомимся</h3>
+              <p>Вы рассказываете, что привело, какой вопрос хочется разобрать. Я слушаю и уточняю. Не оцениваю и не тороплю.</p>
+            </div>
+            <div data-v-cue="0.36 0.66 0.06 0.06">
+              <h3>Дальше: работаем с вашим запросом</h3>
+              <p>Смотрим на ситуацию с разных сторон, ищем, что в ней можно попробовать по-другому. Без советов «в лоб» и без «просто перестань так думать».</p>
+            </div>
+            <div data-v-cue="0.68 1 0.06 0">
+              <h3>В конце: берёте с собой маленький шаг</h3>
+              <p>Договариваемся, что вы попробуете до следующей встречи. Один, маленький и реальный – не «полюби себя», а что-то, что получится сделать.</p>
+            </div>
+          </div>
+          <div class="tl" aria-hidden="true">
+            <p class="tl__cap">Линия одной встречи · <b>50 минут</b></p>
+            <div class="tl__track">
+              <div class="tl__fill"></div>
+              <span class="tl__mark tl__mark--0"><i></i><b><small>0 минут</small>знакомимся</b></span>
+              <span class="tl__mark tl__mark--1"><i></i><b><small>10 минут</small>вы рассказываете, что привело</b></span>
+              <span class="tl__mark tl__mark--2"><i></i><b><small>50 минут</small>итог и шаг до следующей встречи</b></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5 · УСЛУГИ И СТОИМОСТЬ -->
+    <section class="v-section" data-v-act="flow" data-v-drift="#f7f3ee" id="uslugi" aria-label="Услуги и стоимость">
+      <div class="v-wrap svc">
+        <div class="svc__head" data-v-in data-v-in-self>
+          <h2 class="v-display v-display--lg">Услуги и стоимость</h2>
+          <p class="v-body">Стоимость фиксированная, узнаёте её до встречи, а не на ней. Длительность и формат – как вам удобнее.</p>
+        </div>
+        <div data-v-in data-v-stagger="80">
+          <ul class="svc__rows">
+            <li>
+              <h3>Индивидуальная встреча</h3>
+              <p>Очно в кабинете в {{город}}. 50 минут, разговор один на один, без третьих лиц.</p>
+              <span class="sum">{{цена-очно}} ₽<small>50 минут</small></span>
+            </li>
+            <li>
+              <h3>Онлайн-встреча</h3>
+              <p>По видео из любого города. Та же продолжительность и формат, что и очно.</p>
+              <span class="sum">{{цена-онлайн}} ₽<small>50 минут</small></span>
+            </li>
+            <li>
+              <h3>Первая встреча-знакомство</h3>
+              <p>Чтобы понять, комфортно ли нам работать вместе. Без обязательств продолжать.</p>
+              <span class="sum">{{цена-первая}} ₽<small>уточняется</small></span>
+            </li>
+          </ul>
+          <ul class="svc__terms">
+            <li><b>Оплата</b><span>После подтверждения записи: переводом или по ссылке. Стоимость встречи не меняется по ходу работы.</span></li>
+            <li><b>Перенос</b><span>Напишите заранее – перенесём встречу на другой день без штрафа. Своё время я тоже берегу, как и ваше.</span></li>
+            <li><b>Конфиденциальность</b><span>Всё, что вы рассказываете на встрече, остаётся между нами. Это правило работы, а не уступка.</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6 · КОНТАКТЫ -->
+    <section data-v-act="flow" data-v-drift="#f7f3ee" id="kontakty" aria-label="Контакты">
+      <div class="close" data-v-spotlight>
+        <div class="close__inner">
+          <div data-v-in data-v-stagger="80">
+            <h2 class="v-display v-display--lg">Записаться на встречу</h2>
+            <p class="v-lede">Напишите, что привело и какой формат вам удобнее – очно или онлайн. Отвечу лично в течение дня.</p>
+            <div class="close__cta">
+              <a class="v-btn" href="{{ссылка-записи}}" rel="noopener" data-v-magnet="0.22" data-v-rise="0">Записаться</a>
+              <a class="close__tel" href="tel:{{телефон}}">{{телефон}}</a>
+            </div>
+            <p class="close__hint">Если пока не готовы записываться – это нормально. Напишите вопрос, отвечу без навязывания встречи.</p>
+          </div>
+          <div class="close__meta" data-v-in data-v-stagger="60">
+            <span><b>Приём</b>{{часы}}</span>
+            <span><b>Формат</b>очно: {{адрес}}, {{город}} · онлайн: из любого города</span>
+            <span><b>Ответ в сообщении</b>в течение дня</span>
+          </div>
+        </div>
+        <footer class="foot">
+          <span>{{имя}} · психолог · {{город}}</span>
+          <span class="foot__more">Индивидуальные консультации очно и онлайн</span>
+        </footer>
+      </div>
+    </section>
+
+  </main>
+</div>
+
+<script src="vibe.js"></script>
+<script>
+  if (window.matchMedia('(max-width: 860px)').matches) {
+    document.getElementById('top').setAttribute('data-v-span', '1.6');
+    document.getElementById('kak').setAttribute('data-v-span', '1.8');
+  }
+  Vibe.mount(document.querySelector('.v-page'));
+
+  // Шапка: подложка после 40 px прокрутки.
+  (function () {
+    var bar = document.querySelector('.bar'), on = null;
+    function tick() { var s = window.scrollY > 40; if (s !== on) { on = s; bar.classList.toggle('is-scrolled', s); } }
+    window.addEventListener('scroll', tick, { passive: true }); tick();
+  })();
+  // Линию 50 минут ведёт CSS от --v-p акта, скрипта ей не нужно.
+</script>
+</body>
+</html>
